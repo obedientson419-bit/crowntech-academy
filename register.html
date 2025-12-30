@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrownTech Academy | Student Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="CrownTech Logo">
+      <strong>CrownTech Academy</strong>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#our-work">Academy</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<!-- REGISTRATION FORM -->
+<section class="section fade-in" style="background:#ffffff;">
+  <div style="max-width:520px;margin:3rem auto;padding:2.5rem;border-radius:14px;box-shadow:0 20px 40px rgba(0,0,0,.08)">
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <h2>Create Student Account</h2>
+      <p style="color:#64748b;font-size:0.9rem;">Register to enroll in CrownTech Academy courses</p>
+    </div>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Your full name" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="you@email.com" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="080xxxxxxxx" required>
+
+      <label>Select Course</label>
+      <select required>
+        <option value="">-- Choose a Course --</option>
+        <option>Computer Fundamentals</option>
+        <option>MS Office Professional</option>
+        <option>Graphics Design</option>
+        <option>Web Development</option>
+        <option>Cybersecurity Basics</option>
+      </select>
+
+      <label>Password</label>
+      <input type="password" placeholder="Create password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm password" required>
+
+      <button class="btn btn-primary" style="width:100%;margin-top:1rem;">Register</button>
+    </form>
+
+    <p style="text-align:center;margin-top:1rem;font-size:0.85rem;color:#64748b;">Already have an account? <a href="login.html" style="color:#0ea5e9;text-decoration:none;">Login</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 CrownTech Academy. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

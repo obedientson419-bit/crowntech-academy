@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CrownTech Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">CrownTech Academy</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Student Login</a>
+        <a href="admin-login.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-hero" style="padding:4rem 1rem; text-align:center;">
+    <h1 style="margin-bottom:0.5rem;">Welcome to CrownTech Academy</h1>
+    <p style="max-width:900px; margin:0.5rem auto 1.5rem; color:var(--text-secondary);">
+      Practical, project-focused courses designed to help you start or accelerate your tech career.
+      Explore our courses, register for a class, or login to your dashboard.
+    </p>
+
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a class="btn" href="index.html#services">Our Services</a>
+      <a class="btn btn-outline" href="index.html#testimonials">What Partners Say</a>
+      <a class="btn" href="register.html">Register</a>
+      <a class="btn btn-outline" href="login.html">Student Login</a>
+    </div>
+  </main>
+
+  <section class="container" style="padding:2rem 1rem;">
+    <h2 style="text-align:center;">Featured Courses</h2>
+    <p style="text-align:center; color:var(--text-secondary); max-width:900px; margin:0.5rem auto 1.5rem;">A curated selection of our most popular programs.</p>
+    <div id="academy-courses" class="services-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem;">
+      <!-- Course cards will be injected here by js/main.js -->
+      <div class="service-card" id="academy-loading" style="grid-column:1/-1; text-align:center; padding:2rem;">
+        Loading courses...
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:2rem 1rem; text-align:center; color:var(--text-secondary);">
+    <div class="container">
+      <p>&copy; 2025 CrownTech Academy — <a href="index.html">Home</a> · <a href="admin-login.html">Admin</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

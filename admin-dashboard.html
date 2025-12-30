@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrownTech Academy | Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background:#f1f5f9;">
+
+<!-- ADMIN HEADER -->
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="CrownTech Logo">
+      <strong>Admin Dashboard</strong>
+    </div>
+    <nav>
+      <a href="#">Settings</a>
+      <a href="admin-login.html">Logout</a>
+    </nav>
+  </div>
+</header>
+
+<!-- DASHBOARD BODY -->
+<section class="section">
+  <h2>Welcome, Admin 👋</h2>
+  <p style="color:#64748b;margin-bottom:2rem;">Manage CrownTech Academy from one place</p>
+
+  <!-- STATS -->
+  <div class="grid-4">
+    <div class="card">
+      <h3>Total Students</h3>
+      <p>128</p>
+    </div>
+    <div class="card">
+      <h3>Courses</h3>
+      <p>6</p>
+    </div>
+    <div class="card">
+      <h3>Assignments</h3>
+      <p>24</p>
+    </div>
+    <div class="card">
+      <h3>Active Classes</h3>
+      <p>4</p>
+    </div>
+  </div>
+
+  <!-- STUDENT LIST -->
+  <div class="card" style="margin-top:2.5rem;">
+    <h3>Registered Students</h3>
+    <table style="width:100%;margin-top:1rem;border-collapse:collapse;">
+      <tr style="background:#e2e8f0;">
+        <th style="padding:10px;text-align:left;">Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td style="padding:10px;">John Doe</td>
+        <td>john@email.com</td>
+        <td>Web Development</td>
+        <td style="color:#10b981;">Active</td>
+      </tr>
+      <tr>
+        <td style="padding:10px;">Mary Ann</td>
+        <td>mary@email.com</td>
+        <td>Cybersecurity</td>
+        <td style="color:#f59e0b;">Pending</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ADMIN ACTIONS -->
+  <div class="grid-3" style="margin-top:2.5rem;">
+    <div class="card">
+      <h3>Create Assignment</h3>
+      <p>Add new tasks for students</p>
+      <button class="btn btn-primary">Create</button>
+    </div>
+    <div class="card">
+      <h3>Add Course</h3>
+      <p>Expand academy curriculum</p>
+      <button class="btn btn-primary">Add Course</button>
+    </div>
+    <div class="card">
+      <h3>Send Announcement</h3>
+      <p>Notify all students</p>
+      <button class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 CrownTech Academy. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

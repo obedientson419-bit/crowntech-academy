@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrownTech Academy | Student Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background:#f8fafc;">
+
+<!-- DASHBOARD HEADER -->
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="CrownTech Logo">
+      <strong>Student Dashboard</strong>
+    </div>
+    <nav>
+      <a href="#">Profile</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </div>
+</header>
+
+<!-- DASHBOARD CONTENT -->
+<section class="section">
+  <h2>Welcome, Student 👋</h2>
+  <p style="color:#64748b;margin-bottom:2rem;">Here’s an overview of your learning progress</p>
+
+  <!-- STATS CARDS -->
+  <div class="grid-3">
+    <div class="card">
+      <h3>Enrolled Course</h3>
+      <p>Web Development</p>
+    </div>
+    <div class="card">
+      <h3>Assignments</h3>
+      <p>3 Pending</p>
+    </div>
+    <div class="card">
+      <h3>Progress</h3>
+      <p>45% Complete</p>
+    </div>
+  </div>
+
+  <!-- ASSIGNMENTS -->
+  <div class="card" style="margin-top:2.5rem;">
+    <h3>Assignments</h3>
+    <table style="width:100%;margin-top:1rem;border-collapse:collapse;">
+      <tr style="background:#f1f5f9;">
+        <th style="padding:10px;text-align:left;">Title</th>
+        <th>Deadline</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td style="padding:10px;">HTML Basics</td>
+        <td>20 Aug 2025</td>
+        <td style="color:#f59e0b;">Pending</td>
+      </tr>
+      <tr>
+        <td style="padding:10px;">CSS Layout</td>
+        <td>25 Aug 2025</td>
+        <td style="color:#10b981;">Submitted</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- ANNOUNCEMENTS -->
+  <div class="card" style="margin-top:2.5rem;">
+    <h3>Announcements</h3>
+    <p>📢 New class holds on Monday by 10am</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 CrownTech Academy. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

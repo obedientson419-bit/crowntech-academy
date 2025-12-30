@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CrownTech Solutions Aliade | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- TOAST NOTIFICATIONS -->
+<div id="toast-container" class="toast-container"></div>
+
+<!-- NAVBAR -->
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="CrownTech Logo">
+      <strong>CrownTech Solutions Aliade</strong>
+    </div>
+    <nav>
+      <a href="#" onclick="showSection('home')" class="nav-link active">Home</a>
+      <a href="#our-work">Testimonies</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="apply.html">Apply</a>
+      <a href="login.html" class="btn btn-primary">Login</a>
+      <a href="#" onclick="showSection('admin-login')" class="nav-link">Admin</a>
+      <button class="theme-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<!-- HOME SECTION -->
+<div id="home" class="page-section">
+<!-- HERO -->
+<section class="hero fade-in">
+  <div>
+    <span class="badge">TECH SOLUTIONS 2025</span>
+    <h1>Transform Your Business Through Innovation</h1>
+    <p>Empowering students, professionals, and businesses with practical digital skills and modern technology solutions.</p>
+    <a href="#our-work" class="btn btn-primary">Explore Courses</a>
+    <a href="#services" class="btn btn-outline">Our Services</a>
+  </div>
+  <img src="assets/images/hero.jpg" alt="CrownTech Academy">
+</section>
+
+<!-- SERVICES -->
+<section class="section fade-in" id="services">
+  <h2>ICT & Cyber Café Services</h2>
+  <div class="services">
+    <div class="card">ICT & Cyber Café Services</div>
+    <div class="card">Printing & Desktop Publishing</div>
+    <div class="card">Digital Skills Training</div>
+    <div class="card">Website & Digital Solutions</div>
+  </div>
+</section>
+
+<!-- OUR WORK / SERVICES GRID -->
+<section class="section fade-in" id="our-work">
+  <h2>Our Work & Services We Provide</h2>
+  <p class="section-subtitle">Comprehensive solutions for education and business transformation</p>
+  <div class="services-grid">
+    <!-- Service Card 1 -->
+    <div class="service-card">
+      <div class="service-image-container">
+        <img src="assets/images/nysc.jpg" alt="NYSC Registration" class="service-image">
+        <div class="service-overlay"></div>
+      </div>
+      <div class="service-content">
+        <h3>NYSC Registration Services</h3>
+        <p>Streamlined NYSC registration and deployment assistance for graduates nationwide</p>
+        <div class="service-badges">
+          <span class="badge-small">Registration</span>
+          <span class="badge-small">Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 2 -->
+    <div class="service-card">
+      <div class="service-image-container">
+        <img src="assets/images/jamb.jpg" alt="JAMB & WAEC" class="service-image">
+        <div class="service-overlay"></div>
+      </div>
+      <div class="service-content">
+        <h3>JAMB & WAEC Registration</h3>
+        <p>Expert guidance for exam registration and preparation to help you excel</p>
+        <div class="service-badges">
+          <span class="badge-small">Exam Prep</span>
+          <span class="badge-small">Registration</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 3 -->
+    <div class="service-card">
+      <div class="service-image-container">
+        <img src="assets/images/training.jpg" alt="Digital Skills Training" class="service-image">
+        <div class="service-overlay"></div>
+      </div>
+      <div class="service-content">
+        <h3>Digital Skills Training</h3>
+        <p>Comprehensive courses in modern tech skills and professional development</p>
+        <div class="service-badges">
+          <span class="badge-small">Training</span>
+          <span class="badge-small">Skills</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 4 -->
+    <div class="service-card">
+      <div class="service-image-container">
+        <img src="assets/images/web.jpg" alt="Website Development" class="service-image">
+        <div class="service-overlay"></div>
+      </div>
+      <div class="service-content">
+        <h3>Website Development</h3>
+        <p>Custom web solutions to establish your online presence professionally</p>
+        <div class="service-badges">
+          <span class="badge-small">Development</span>
+          <span class="badge-small">Web</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 5 -->
+    <div class="service-card">
+      <div class="service-image-container">
+        <img src="assets/images/printing.jpg" alt="Printing & Design Services" class="service-image">
+        <div class="service-overlay"></div>
+      </div>
+      <div class="service-content">
+        <h3>Printing & Design Services</h3>
+        <p>Professional branding, printing, and creative design for your business needs</p>
+        <div class="service-badges">
+          <span class="badge-small">Design</span>
+          <span class="badge-small">Print</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Card 6 -->
+    <div class="service-card">
+      <div class="service-image-container">
+        <img src="assets/images/security.jpg" alt="Tech Support & Security" class="service-image">
+        <div class="service-overlay"></div>
+      </div>
+      <div class="service-content">
+        <h3>Tech Support & Security</h3>
+        <p>Reliable IT support and cybersecurity solutions to protect your systems</p>
+        <div class="service-badges">
+          <span class="badge-small">Security</span>
+          <span class="badge-small">Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section fade-in" id="testimonials">
+  <h2>What Our Partners Say</h2>
+  <p class="section-subtitle">Trusted by students, professionals, and organizations</p>
+  
+  <div class="testimonials-slider">
+    <div class="testimonial-container">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-slide active">
+        <div class="testimonial-content">
+          <div class="testimonial-text">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"CrownTech Academy transformed my career through their comprehensive digital skills training. The instructors are knowledgeable and the curriculum is up-to-date with industry standards."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">A.O</div>
+            <div class="author-info">
+              <h4>Aisha Okafor</h4>
+              <p>Web Developer, Tech Solutions Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <div class="testimonial-text">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"The NYSC registration support was exceptional. The team guided me through every step and made the entire process seamless. Highly recommended!"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">C.U</div>
+            <div class="author-info">
+              <h4>Chukwu Uche</h4>
+              <p>Graduate, NYSC Participant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <div class="testimonial-text">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"We partnered with CrownTech for our company website and the results exceeded our expectations. Professional, timely, and excellent customer service."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">T.A</div>
+            <div class="author-info">
+              <h4>Toyin Adeyemi</h4>
+              <p>Business Owner, Adeyemi Enterprises</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <div class="testimonial-text">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="quote">"The cybersecurity training gave us the knowledge to protect our business data effectively. The instructors are world-class and very approachable."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">K.I</div>
+            <div class="author-info">
+              <h4>Kunle Ibrahim</h4>
+              <p>IT Manager, Digital Services Ltd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+      <button class="slider-btn prev" onclick="previousTestimonial()">❮</button>
+      <div class="slider-dots">
+        <span class="dot active" onclick="goToTestimonial(0)"></span>
+        <span class="dot" onclick="goToTestimonial(1)"></span>
+        <span class="dot" onclick="goToTestimonial(2)"></span>
+        <span class="dot" onclick="goToTestimonial(3)"></span>
+      </div>
+      <button class="slider-btn next" onclick="nextTestimonial()">❯</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact fade-in" id="contact">
+  <div>
+    <h2>Let’s Connect</h2>
+    <p>Reach out to CrownTech Academy for training, ICT services, or digital solutions.</p>
+  </div>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button class="btn btn-primary">Send Message</button>
+  </form>
+</section>
+</div>
+
+<!-- ADMIN LOGIN SECTION -->
+<div id="admin-login" class="page-section" style="display: none;">
+<section class="section fade-in admin-section">
+  <div class="admin-login-container">
+    <div class="admin-login-box">
+      <div class="admin-login-header">
+        <img src="assets/images/logo.png" alt="CrownTech Academy" class="admin-logo">
+        <h2>Admin Login</h2>
+        <p>Authorized access only</p>
+      </div>
+
+      <form class="admin-form" onsubmit="handleAdminLogin(event)">
+        <div class="form-group">
+          <label>Admin Email</label>
+          <input type="email" placeholder="admin@crowntech.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Login as Admin</button>
+      </form>
+
+      <div class="admin-info">
+        🔐 This portal is restricted to CrownTech Academy administrators.
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ADMIN DASHBOARD SECTION -->
+<div id="admin-dashboard" class="page-section" style="display: none;">
+<div class="dashboard-wrapper">
+  <!-- SIDEBAR -->
+  <aside class="dashboard-sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+      <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#" class="sidebar-item active" onclick="switchDashboardTab('overview')">
+        <span class="icon">📊</span>
+        <span class="label">Overview</span>
+      </a>
+      <a href="#" class="sidebar-item" onclick="switchDashboardTab('students')">
+        <span class="icon">👥</span>
+        <span class="label">Students</span>
+      </a>
+      <a href="#" class="sidebar-item" onclick="switchDashboardTab('courses')">
+        <span class="icon">📚</span>
+        <span class="label">Courses</span>
+      </a>
+      <a href="#" class="sidebar-item" onclick="switchDashboardTab('analytics')">
+        <span class="icon">📈</span>
+        <span class="label">Analytics</span>
+      </a>
+      <a href="#" class="sidebar-item" onclick="switchDashboardTab('settings')">
+        <span class="icon">⚙️</span>
+        <span class="label">Settings</span>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button onclick="handleAdminLogout()" class="btn btn-outline" style="width: 100%;">Logout</button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="dashboard-main">
+    <!-- HEADER -->
+    <div class="dashboard-header">
+      <div>
+        <h2>Welcome, Admin 👋</h2>
+        <p class="dashboard-subtitle">Manage CrownTech Academy from one place</p>
+      </div>
+      <button class="theme-toggle-dashboard" onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
+    </div>
+
+    <!-- OVERVIEW TAB -->
+    <div id="tab-overview" class="dashboard-tab active">
+      <!-- STATS -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div>
+            <h3>Total Students</h3>
+            <p class="stat-number">128</p>
+            <p class="stat-change">+12 this month</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div>
+            <h3>Courses</h3>
+            <p class="stat-number">6</p>
+            <p class="stat-change">2 active now</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📝</div>
+          <div>
+            <h3>Assignments</h3>
+            <p class="stat-number">24</p>
+            <p class="stat-change">8 pending</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">▶️</div>
+          <div>
+            <h3>Active Classes</h3>
+            <p class="stat-number">4</p>
+            <p class="stat-change">2 upcoming</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS -->
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>Student Enrollment Trend</h3>
+          <canvas id="enrollmentChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Course Distribution</h3>
+          <canvas id="courseChart"></canvas>
+        </div>
+      </div>
+
+      <!-- STUDENT LIST -->
+      <div class="card admin-card" style="margin-top: 2.5rem;">
+        <h3>Recent Students</h3>
+        <table class="admin-table">
+          <tr class="table-header">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>john@email.com</td>
+            <td>Web Development</td>
+            <td><span class="status-active">Active</span></td>
+          </tr>
+          <tr>
+            <td>Mary Ann</td>
+            <td>mary@email.com</td>
+            <td>Cybersecurity</td>
+            <td><span class="status-pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td>James Smith</td>
+            <td>james@email.com</td>
+            <td>Mobile Dev</td>
+            <td><span class="status-active">Active</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- STUDENTS TAB -->
+    <div id="tab-students" class="dashboard-tab">
+      <div class="card admin-card">
+        <h3>All Students</h3>
+        <div class="tab-content">
+          <p>Manage and view all enrolled students here.</p>
+          <table class="admin-table">
+            <tr class="table-header">
+              <th>Name</th>
+              <th>Email</th>
+              <th>Course</th>
+              <th>Enrollment Date</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>john@email.com</td>
+              <td>Web Development</td>
+              <td>Jan 15, 2025</td>
+              <td><span class="status-active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Mary Ann</td>
+              <td>mary@email.com</td>
+              <td>Cybersecurity</td>
+              <td>Jan 20, 2025</td>
+              <td><span class="status-pending">Pending</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- COURSES TAB -->
+    <div id="tab-courses" class="dashboard-tab">
+      <div class="admin-actions-grid">
+        <div class="card admin-card">
+          <h3>Web Development</h3>
+          <p>4 students enrolled</p>
+          <p class="text-muted">Duration: 12 weeks</p>
+          <button class="btn btn-primary" onclick="showToast('Course opened!', 'success')">Manage</button>
+        </div>
+        <div class="card admin-card">
+          <h3>Cybersecurity</h3>
+          <p>3 students enrolled</p>
+          <p class="text-muted">Duration: 10 weeks</p>
+          <button class="btn btn-primary" onclick="showToast('Course opened!', 'success')">Manage</button>
+        </div>
+        <div class="card admin-card">
+          <h3>Mobile Development</h3>
+          <p>5 students enrolled</p>
+          <p class="text-muted">Duration: 14 weeks</p>
+          <button class="btn btn-primary" onclick="showToast('Course opened!', 'success')">Manage</button>
+        </div>
+        <div class="card admin-card">
+          <h3>Create New Course</h3>
+          <p>Add a new course to the curriculum</p>
+          <button class="btn btn-primary" onclick="showToast('New course form opened!', 'info')">Create</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANALYTICS TAB -->
+    <div id="tab-analytics" class="dashboard-tab">
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>Monthly Revenue</h3>
+          <canvas id="revenueChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Student Satisfaction</h3>
+          <canvas id="satisfactionChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- SETTINGS TAB -->
+    <div id="tab-settings" class="dashboard-tab">
+      <div class="card admin-card">
+        <h3>Account Settings</h3>
+        <form>
+          <div class="form-group">
+            <label>Admin Name</label>
+            <input type="text" value="Administrator" class="form-input">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" value="admin@crowntech.com" class="form-input">
+          </div>
+          <button type="button" class="btn btn-primary" onclick="showToast('Settings saved!', 'success')">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+</div>
+
+<footer>
+  <p>© 2025 CrownTech Academy. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
